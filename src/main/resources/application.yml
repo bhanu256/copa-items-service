@@ -4,8 +4,15 @@ spring:
   config:
     import: "optional:configserver:"
   datasource:
-    url: "jdbc:h2:mem:testdb"
-      
+    url: "jdbc:mysql://localhost:3306/copa"
+    username: root
+    password: chowd@ry1
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+  
+
 server:
   port: 8001
   
